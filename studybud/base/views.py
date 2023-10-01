@@ -17,3 +17,7 @@ def room(request, pk):
     
     context = {'room': room}
     return render(request, 'base/room.html', context)
+
+def createRoom(request):
+    context = {}
+    return render(request, 'base/room_form.html', context)
